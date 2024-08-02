@@ -1,0 +1,196 @@
+/* App.css */
+
+/* Base Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #1e88e5; /* Material Blue */
+}
+
+.word-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.letter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  margin: 0 5px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #333;
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.letter.visible {
+  opacity: 1;
+}
+
+.button-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.guess-section {
+  margin-bottom: 20px;
+}
+
+.restart-button,
+.remove-button {
+  padding: 12px 20px;
+  margin-right: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #f44336; /* Red */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.remove-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.restart-button:hover,
+.remove-button:hover {
+  background-color: #d32f2f;
+}
+
+.restart-button:focus,
+.remove-button:focus {
+  outline: none;
+}
+
+.letter-selection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.letter-button {
+  padding: 10px 15px;
+  margin: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #2196f3; /* Material Blue */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.letter-button.selected {
+  background-color: #1976d2; /* Darker Material Blue */
+}
+
+.letter-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.hints {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.hint-button {
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #4caf50; /* Green */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.hint-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.hint-button:hover {
+  background-color: #388e3c; /* Darker Green */
+}
+
+.hint-button:focus {
+  outline: none;
+}
+
+.message {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.guess-button {
+  padding: 12px 30px;
+  margin-top: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #ff5722; /* Deep Orange */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.guess-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.guess-button:hover {
+  background-color: #e64a19; /* Darker Deep Orange */
+}
+
+.guess-button:focus {
+  outline: none;
+}
+
+.word-description {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
